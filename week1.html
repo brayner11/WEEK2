@@ -1,76 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Journal</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #996633;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline;
-            margin-right: 1rem;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        footer {
-            background-color: #996633;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .journal-entry {
-            margin-bottom: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
-
 <body>
     <header>
         <h1>My Journal</h1>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="home.html"><button style="background-color: #FFEFD5;">Home</button></a></li>
-                <li><a href="week1.html" target="_blank"><button style="background-color: #FFEFD5;">Week1</button></a></li>
-                <li><a href="week2.html" target="_blank"><button style="background-color: #FFEFD5;">Week2</button></a></li>
-                <li><a href="improvements.html" target="_blank"><button style="background-color: #FFEFD5;">improvements</button></a></li>
-                <li><a href="discoveries.html" target="_blank"><button style="background-color: #FFEFD5;">discoveries</button></a></li>
+                <li><a href="home.html"><button>Home</button></a></li>
+                <li><a href="week1.html" target="_blank"><button>Week1</button></a></li>
+                <li><a href="week2.html" target="_blank"><button>Week2</button></a></li>
+                <li><a href="improvements.html" target="_blank"><button>Improvements</button></a></li>
+                <li><a href="discoveries.html" target="_blank"><button>Discoveries</button></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="journal-entry">
-            <marquee width = "100%"
-            behavior = "alternate"
-            bgcolor = "#FFFFCC"><h2 >WEEK 1</h2> </marquee>
-            <!-- me journal content goes here -->
-            <p>This week, I focused on...</p>
-            <!-- Add more content as needed -->
-            <img src="/images/developer.png" alt="software developer" width="500" height="300">
+            <h2>Week 1</h2>
+            <p> Dia 1: Introductions to JavaScript and Installations</p>
+            <img src="/images/introductionJS.png" alt="Introduction and Installations" width="500" height="300">
+            <p>On the first day, we saw a little about how JS works and the platforms that we are going to use to run our code such as visual studio code. They also taught us arrays and dot notations.</p>
+            <h3> Arrays</h3>
+            <p>An array is a special variable, which can hold more than one value.</p>
+            <img src="/images/Arrays.png" alt="Arrays" width="400" height="200">
+            <p>We also saw some Arrays methods like:</p>
+            <img src="/images/Methods-Arrays.png" alt="Arrays" width="400" height="200">
+            <h3> Dot notations</h3>
+            <p>Dot notation is the most commonly used notation for accessing object properties. In dot notation, you access an object's property by specifying the object followed by a period and the property name.</p>
+            <img src="/images/Dot-Notation.png" alt="Arrays" width="400" height="200">
         </section>
     </main>
 
@@ -78,5 +42,4 @@
         <p>&copy; 2024 My Journal</p>
     </footer>
 </body>
-
 </html>
